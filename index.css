@@ -1,25 +1,18 @@
-.calender{
+.food{
+    border: 1px solid skyblue;
+}
+.Container{
     display: grid;
-    grid-template-columns: repeat(7, 1fr) ;
-    grid-template-rows: 30px repeat(5, 50px);
-    row-gap: 20px;
-    column-gap: 10px;
-}
-.date , .day{
-    background-color: aquamarine;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 10px;
     border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50px;
-    font-size: 1.25em;
 }
-.day{
-    font-size: 1em;
-    background-color: lightgray;
-    height: 40px;
+.food img{
+    width: 100%;
 }
-h3{
-    text-align: center;
-    
+@media screen and (max-width: 586px)  {
+    .Container{
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
